@@ -1,4 +1,4 @@
-📄✨ AI-Based PDF Chatbot using Gemini & Streamlit
+#📄✨ AI-Based PDF Chatbot using Gemini & Streamlit
 
 Welcome to the AI PDF Chatbot — a smart, interactive assistant that lets you upload any PDF and chat with it! This project uses Gemini (Google Generative AI) to answer questions from your uploaded document in real time using LangChain, FAISS, and Streamlit.
 
@@ -27,36 +27,36 @@ Welcome to the AI PDF Chatbot — a smart, interactive assistant that lets you u
 📂 Project Directory Structure
 
 pdf-chatbot/
-├── app.py                   # Main Streamlit application
-├── uploaded.pdf             # Temporary uploaded file
-├── .env                     # Environment file for API key
-├── requirements.txt         # Dependencies
-└── README.md                # Project overview (this file)
+   app.py                   # Main Streamlit application
+   uploaded.pdf             # Temporary uploaded file
+   .env                     # Environment file for API key
+   requirements.txt         # Dependencies
+   README.md                # Project overview (this file)
 
 🧪 How It Works – Step-by-Step
 Upload a PDF:
-The user uploads any PDF file via the Streamlit UI.
+   The user uploads any PDF file via the Streamlit UI.
 
 PDF Loading:
-The app loads and processes the PDF using PyPDFLoader.
+   The app loads and processes the PDF using PyPDFLoader.
 
 Text Splitting:
-Text is split into chunks using RecursiveCharacterTextSplitter for efficient vector embedding.
+   Text is split into chunks using RecursiveCharacterTextSplitter for efficient vector embedding.
 
 Embedding Generation:
-Gemini's GoogleGenerativeAIEmbeddings model converts chunks into embeddings.
+   Gemini's GoogleGenerativeAIEmbeddings model converts chunks into embeddings.
 
 Vector Store with FAISS:
-The embeddings are stored in FAISS for similarity search.
+   The embeddings are stored in FAISS for similarity search.
 
 Conversational Chain:
-The app uses ConversationalRetrievalChain with memory to maintain chat context.
+   The app uses ConversationalRetrievalChain with memory to maintain chat context.
 
 Ask Questions:
-User can now chat with the bot. It answers based on PDF content or handles small talk like "Hi", "Thank you", etc.
+   User can now chat with the bot. It answers based on PDF content or handles small talk like "Hi", "Thank you", etc.
 
 Display Chat:
-A clean UI shows the back-and-forth between the user and the chatbot.
+   A clean UI shows the back-and-forth between the user and the chatbot.
 
 ✅ Setup Instructions
 1. Clone the Repository
